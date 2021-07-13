@@ -7,8 +7,15 @@
 *
 {
     font-family: 'Poppins', sans-serif;
+    font-weight: normal;
     margin: 0;
     padding: 0;
+}
+
+section
+{
+    width: 1050px;
+    margin: 70px auto 170px auto;
 }
 
 a{
@@ -50,6 +57,7 @@ header .imgBox
 header .slogan
 {
     font-size: 64px;
+    font-weight: 700;
     margin-bottom: 27px;
     color: white;
 }
@@ -65,4 +73,70 @@ header .imgBox img
 {
     width: 556px;
     height: 438px;
+}
+
+/* -----------------------
+ players section  
+-------------------------*/
+.players
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+}
+
+.player
+{
+    background-color: #fff;
+    padding: 15px 15px 33px 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.player img
+{
+    width: 300px;
+    height: 256px;
+}
+
+.player .player-name
+{
+    font-size: 28px;
+    font-weight: 700;
+    color:#18191F;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+
+.player .player-des
+{
+    font-size: 16px;
+    font-weight: 400;
+    color: #6C6C6C;
+}
+
+/* ------------------------
+ footer section  
+--------------------------*/
+footer .container
+{
+    width: 484px;
+    margin: 158px auto 63px auto;
+    text-align: center;
+}
+
+footer img.logo
+{
+    width: 100%;
+}
+
+footer .social-links
+{
+    margin: 20px 0;
+}
+
+footer .copyright
+{
+    font-size: 18px;
+    font-weight: 400;
 }
