@@ -47,6 +47,14 @@ header
     gap: 102px;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    transition: 2s;
+}
+
+header:hover img
+{
+    transform: scale(1.3);
+    
 }
 
 header .slogan
@@ -68,6 +76,7 @@ header .imgBox img
 {
     width: 556px;
     height: 438px;
+    transition: transform 0.5s;
 }
 
 /* -----------------------
@@ -292,4 +301,132 @@ footer .copyright
 {
     font-size: 18px;
     font-weight: 400;
+}
+
+
+/* ===============================
+ Responsive With Media Query 
+================================== */
+
+    /* /// Mobile Devices /// */
+@media only screen and (max-width: 688px) 
+{
+    section
+    {
+        width: 100%;
+    }
+        /* /// Header Section ///  */
+
+    header 
+    {
+        flex-direction: column;
+        row-gap: 50px;
+        padding: 70px 50px;
+    }
+
+    header .imgBox img
+    {
+        width: 100%;
+        height: auto;
+        transition: transform 0.5s;
+    }
+
+    /* ////// Players ///// */
+    .players
+    {
+        padding: 70px 0 165px 0;
+    }
+
+    .players .container
+    {
+        width: 95%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 27px;
+    }
+
+    .players .player
+    {
+        background-color: #fff;
+        padding: 15px 15px 33px 15px;
+        text-align: center;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .player img
+    {
+        width: 100%;
+        height: auto;
+    }
+
+    .player .player-name
+    {
+        text-align: left;
+    }
+
+    .player .player-des
+    {
+        text-align: left;
+    }
+
+
+    /* /// Honor Section ///  */
+    .honors
+    {
+        width: 100%;
+        height: auto;
+        padding: 30px 0;
+        display: flex;
+        justify-content: left;
+        background-color:#da9a29;
+        
+    }
+
+    .honors .container
+    {
+        
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+    }
+
+    .honors .honor
+    {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    /* /// Shop Section ///  */
+    
+    .shop .container
+    {
+        width: 95%;
+        margin: 0 auto;
+    }
+        
+    .shop .products
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+
+    .container .btn-shop
+    {
+        margin-top: 10px;
+    }  
+
+    /* //Footer //  */
+
+    footer .container
+    {
+        width: 80%;
+        margin: 50px auto 63px auto;
+        text-align: center;
+    }
+
 }
