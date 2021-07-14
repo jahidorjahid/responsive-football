@@ -47,8 +47,6 @@ header
     gap: 102px;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    transition: 2s;
 }
 
 header:hover img
